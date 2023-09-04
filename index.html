@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generador de Constraseñas</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+<body>
+
+    <main class="main">
+        <h1 class="main__h1">Generador de Constraseñas</h1>
+        <section class="main__section">
+            <p class="main__section--p" id="contrasenia">CONTRASEÑA</p>
+            <span class="material-symbols-outlined main__section--span" id="clipboard">
+                inventory
+            </span>
+        </section>
+        <section class="main__section--inputs section">
+
+            <article class="section__article--range">
+                <p>Longitud</p>
+                <p id="length">0</p>
+            </article>
+
+            <input type="range" name="range" id="range" class="section__input--range" min="0" max="20" step="1" value="0">
+
+            <article class="section__article--checkbox label">
+                <label for="mayusculas" class="label__label">
+                    <input type="checkbox" name="mayusculas" id="mayusculas">
+                    Incluir Mayúsuculas
+                </label>
+                <label for="minusculas" class="label__label">
+                    <input type="checkbox" name="minusculas" id="minusculas">
+                    Incluir Minúsculas
+                </label>
+                <label for="numeros" class="label__label">
+                    <input type="checkbox" name="numeros" id="numeros">
+                    Incluir Números
+                </label>
+                <label for="simbolos" class="label__label">
+                    <input type="checkbox" name="simbolos" id="simbolos">
+                    Incluir Símbolos
+                </label>
+            </article>
+            
+            
+            <article class="section__article--fuerza article">
+                <p class="article__p">FUERZA</p>
+                <div class="article__div div">
+                    <div class="div__div div__div--1"></div>
+                    <div class="div__div div__div--2"></div>
+                    <div class="div__div div__div--3"></div>
+                    <div class=" div__div div__div--4"></div>
+                </div>
+            </article>
+
+            <button class="section__button" id="btn">GENERAR</button>
+
+        </section>
+        <script src="app.js"></script>
+
+    </main>
+</body>
+</html>
